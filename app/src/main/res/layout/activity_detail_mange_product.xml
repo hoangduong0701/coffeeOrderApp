@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".Activities.TransactionActivity">
+    <ImageButton
+        android:translationZ="1dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btn_back"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/roundedcorner"
+        android:src="@drawable/button_back" />
+    <TextView
+        android:fontFamily="@font/gotham"
+        android:translationZ="1dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin sản phẩm"
+        android:textSize="28dp"
+        android:textColor="@color/tan"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/maincontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_purple"
+        android:orientation="vertical"
+        android:paddingTop="70dp"
+        tools:context=".Activities.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#96ffffff">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_NameProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="16dp"
+                        android:fontFamily="@font/gotham"
+                        android:hint="Tên sản phẩm"
+                        android:inputType="text"
+                        android:shadowColor="@color/white"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#96ffffff">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_PriceProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="16dp"
+                        android:fontFamily="@font/gotham"
+                        android:hint="Giá sán phẩm"
+                        android:inputType="numberDecimal"
+                        android:shadowColor="@color/white"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#96ffffff">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_DescProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawablePadding="16dp"
+                        android:fontFamily="@font/gotham"
+                        android:hint="Mô tả"
+                        android:inputType="text"
+                        android:shadowColor="@color/white"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Loại"
+                    android:textColor="@color/tan"
+                    android:textSize="20dp" />
+
+                <Spinner
+                    android:id="@+id/dropdown_cate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/dark_tan"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_confirmUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonshapewhitebg"
+                android:text="Confirm"
+                android:textColor="#4a2b29"
+                android:textSize="18dp"
+                android:theme="@style/Theme.Button"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
